@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Дядя Сэм</string>
+    <string name="source">Сырье</string>
+    <string name="result">Результат</string>
+    <string name="calculate">РАСЧЕТ</string>
+    <string name="volume">объем</string>
+    <string name="conc">крепость</string>
+</resources>

@@ -14,7 +14,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:text="Source"
+        android:text="@string/source"
         android:textSize="18sp"
         android:layout_margin="16dp"
          />
@@ -27,7 +27,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:ems="10"
-        android:hint="conc"
+        android:hint="@string/conc"
         android:inputType="numberDecimal"
         android:layout_margin="16dp"
     />
@@ -41,14 +41,14 @@
         android:layout_toLeftOf="@id/sourceConcentrationEditText"
         android:layout_toStartOf="@id/sourceConcentrationEditText"
         android:ems="10"
-        android:hint="volume"
+        android:hint="@string/volume"
         android:inputType="numberDecimal" />
 
     <TextView
         android:id="@+id/resultTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Result"
+        android:text="@string/result"
         android:textSize="18sp"
         android:layout_alignBaseline="@+id/resultVolumeEditText"
         android:layout_alignParentLeft="true"
@@ -62,7 +62,7 @@
         android:layout_below="@id/sourceConcentrationEditText"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:hint="conc"
+        android:hint="@string/conc"
         android:inputType="numberDecimal"
         android:layout_margin="16dp"
         />
@@ -76,30 +76,28 @@
         android:layout_toLeftOf="@id/resultConcentrationEditText"
         android:layout_toStartOf="@id/resultConcentrationEditText"
         android:enabled="false"
-        android:hint="volume"
+        android:hint="@string/volume"
         android:inputType="numberDecimal" />
 
     <Button
         android:id="@+id/calculateButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="12dp"
-        android:text="CALCULATE"
-        android:layout_margin="16dp"
-        />
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:text="@string/calculate"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/calculateTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/calculateButton"
         android:text=""
+        tools:text="Add some water"
+        android:textSize="20sp"
         android:layout_margin="16dp"
+
         />
 
 

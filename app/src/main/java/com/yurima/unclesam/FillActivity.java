@@ -10,13 +10,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-import static com.yurima.unclesam.R.id.calculateTextView;
-import static com.yurima.unclesam.R.id.resultConcentrationEditText;
-import static com.yurima.unclesam.R.id.sourceConcentrationEditText;
-import static com.yurima.unclesam.R.id.sourceVolumeEditText;
-import static com.yurima.unclesam.R.id.sourceConcentrationEditText;
-import static com.yurima.unclesam.R.id.sourceVolumeEditText;
-
 public class FillActivity extends AppCompatActivity {
 
     @BindView(R.id.calculateButton)
@@ -42,9 +35,13 @@ public class FillActivity extends AppCompatActivity {
         double vol = Double.parseDouble(sourceVolumeEditText.getText().toString());
         double con = Double.parseDouble(sourceConcentrationEditText.getText().toString());
         double resultCon = Double.parseDouble(resultConcentrationEditText.getText().toString());
+
         double absoluteSpiritSource = vol * con / 100;
         double absoluteWaterSource = vol * (100 - con) /100;
-        double x = absoluteSpiritSource * (100 - resultCon) / resultCon - absoluteWaterSource;
-        calculateTextView.setText(String.format("add %.2f", x));
+        double water = absoluteSpiritSource * (100 - resultCon) / resultCon - absoluteWaterSource;
+
+//        double water2 = con / resultCon * vol - vol;
+
+        calculateTextView.setText(String.format("add %.2f", water));
     }
 }
