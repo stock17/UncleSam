@@ -1,9 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.yurima.unclesam.FillActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/sourceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Source"
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+         />
+
+    <EditText
+        android:id="@+id/sourceConcentrationEditText"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="conc"
+        android:inputType="numberDecimal"
+        android:layout_margin="16dp"
+    />
+
+    <EditText
+        android:id="@+id/sourceVolumeEditText"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:layout_toLeftOf="@id/sourceConcentrationEditText"
+        android:layout_toStartOf="@id/sourceConcentrationEditText"
+        android:ems="10"
+        android:hint="volume"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/resultVolumeEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/resultConcentrationEditText"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sourceConcentrationEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:hint="conc"
+        android:inputType="numberDecimal"
+        android:layout_margin="16dp"
+        />
+
+    <EditText
+        android:id="@+id/resultVolumeEditText"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sourceVolumeEditText"
+        android:layout_margin="16dp"
+        android:layout_toLeftOf="@id/resultConcentrationEditText"
+        android:layout_toStartOf="@id/resultConcentrationEditText"
+        android:enabled="false"
+        android:hint="volume"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="12dp"
+        android:text="CALCULATE"
+        android:layout_margin="16dp"
+        />
+
+    <TextView
+        android:id="@+id/calculateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text=""
+        android:layout_margin="16dp"
+        />
+
+
+</RelativeLayout>
