@@ -5,4 +5,9 @@
     <string name="calculate">РАСЧЕТ</string>
     <string name="volume">объем</string>
     <string name="conc">крепость</string>
+    <string name="general_volume">Общий объем</string>
+    <string name="source_spirit_volume">Крепость дистиллята</string>
+    <string name="result_spirit_volume">Нужная крепость</string>
+    <string name="ml">мл</string>
+    <string name="to_add">Нужно добавить %1$.2f мл воды</string>
 </resources>

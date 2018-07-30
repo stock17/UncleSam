@@ -1,8 +1,13 @@
 <resources>
     <string name="app_name">UncleSam</string>
-    <string name="source">Source</string>
-    <string name="result">Result</string>
+    <string name="general_volume">General Volume</string>
+    <string name="source_spirit_volume">Source Spirit Volume</string>
+    <string name="result_spirit_volume">Result Spirit Volume</string>
     <string name="calculate">CALCULATE</string>
     <string name="volume">volume</string>
     <string name="conc">conc</string>
+    <string name="ml">ml</string>
+    <string name="percent">%</string>
+    <string name="to_add">Need to add %1$.2f ml of water</string>
+
 </resources>

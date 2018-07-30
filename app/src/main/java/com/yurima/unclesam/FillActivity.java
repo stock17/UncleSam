@@ -42,6 +42,7 @@ public class FillActivity extends AppCompatActivity {
 
 //        double water2 = con / resultCon * vol - vol;
 
-        calculateTextView.setText(String.format("add %.2f", water));
+        calculateTextView.setText(String.format(
+                getResources().getString(R.string.to_add), water));
     }
 }
