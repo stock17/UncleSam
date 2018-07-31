@@ -9,5 +9,6 @@
     <string name="source_spirit_volume">Крепость дистиллята</string>
     <string name="result_spirit_volume">Нужная крепость</string>
     <string name="ml">мл</string>
-    <string name="to_add">Нужно добавить %1$.2f мл воды</string>
+    <string name="to_add">Добавить %1$.2f мл воды</string>
+    <string name="incorrect_data">Неверные параметры</string>
 </resources>

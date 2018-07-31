@@ -9,5 +9,6 @@
     <string name="ml">ml</string>
     <string name="percent">%</string>
     <string name="to_add">Need to add %1$.2f ml of water</string>
+    <string name="incorrect_data">Incorrect Data</string>
 
 </resources>
