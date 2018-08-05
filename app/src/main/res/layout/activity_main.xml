@@ -20,7 +20,7 @@
         android:layout_height="wrap_content">
 
         <ImageButton
-            android:id="@+id/fill_button"
+            android:id="@+id/waterdown_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -31,6 +31,7 @@
             />
 
         <ImageButton
+            android:id="@+id/braga_button"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"/>

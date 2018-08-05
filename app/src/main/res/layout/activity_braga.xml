@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.yurima.unclesam.WaterDownActivity"
-    android:orientation="vertical"
-    >
-
+    tools:context="com.yurima.unclesam.BragaActivity"
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/sourceTextView"
+            android:id="@+id/braga_waterTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/general_volume"
+            android:text="@string/water"
             android:textSize="18sp"
             android:layout_marginLeft="16dp"
             android:layout_centerVertical="true"
@@ -27,7 +24,7 @@
             android:layout_marginStart="16dp" />
 
         <EditText
-            android:id="@+id/sourceVolumeEditText"
+            android:id="@+id/braga_waterEditText"
             android:layout_width="96dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -43,58 +40,27 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/sourceSpiritVolumeTextView"
+            android:id="@+id/braga_sugarTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/sugar"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:text="@string/source_spirit_volume"
-            android:textSize="18sp"
-            android:layout_margin="16dp"
-            android:layout_centerVertical="true"
-            />
+            android:layout_marginStart="16dp" />
 
         <EditText
-            android:id="@+id/sourceConcentrationEditText"
-            android:layout_width="64dp"
+            android:id="@+id/braga_sugarEditText"
+            android:layout_width="96dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
             android:inputType="numberDecimal"
-            android:layout_margin="16dp"
-            android:hint="@string/percent"
-            />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/resultTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/result_spirit_volume"
-            android:textSize="18sp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_margin="16dp"
-            android:layout_centerVertical="true"
-            />
-
-        <EditText
-            android:id="@+id/resultConcentrationEditText"
-            android:layout_width="64dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:inputType="numberDecimal"
-            android:layout_margin="16dp"
-            android:hint="@string/percent"
-
-            />
-
+            android:hint="@string/gr"/>
     </RelativeLayout>
 
 
@@ -104,7 +70,7 @@
         android:layout_marginTop="64dp"
         >
         <Button
-            android:id="@+id/calculateButton"
+            android:id="@+id/braga_calculateButton"
             android:layout_width="128dp"
             android:layout_height="128dp"
             android:background="@drawable/button_256"
@@ -115,19 +81,6 @@
             android:layout_centerInParent="true"
             />
     </RelativeLayout>
-
-    <TextView
-            android:id="@+id/calculateTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text=""
-            tools:text="Add some water"
-            android:textSize="18sp"
-            android:layout_margin="16dp"
-    />
-
-
 
 
 </LinearLayout>
