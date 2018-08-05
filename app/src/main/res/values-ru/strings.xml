@@ -14,4 +14,7 @@
     <string name="water">Вода</string>
     <string name="sugar">Сахар</string>
     <string name="gr">гр.</string>
+    <string name="gm">ГМ</string>
+    <string name="vol">% об.</string>
+    <string name="total_amount">Итоговый объем</string>
 </resources>

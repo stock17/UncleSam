@@ -13,5 +13,8 @@
     <string name="water">Water</string>
     <string name="sugar">Sugar</string>
     <string name="gr">gr.</string>
+    <string name="gm">GM</string>
+    <string name="vol">% vol</string>
+    <string name="total_amount">Total Amount</string>
 
 </resources>
